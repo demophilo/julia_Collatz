@@ -1,20 +1,7 @@
-#=
-Collatz:
-- Julia version: 1.85
-- Author: karl
-- Date: 2023-04-01
-=#
 
 
-function collatz_operator(zahl::Int128)
-    n = 0
-    while zahl % 2 == 0 && zahl != 0
-        n += 1
-        zahl = div(zahl, 2)
-    end
-    ergebnis::Int128 = zahl * 3 + 2^n
-    return ergebnis
-end
+
+
 
 
 function collatz_sequence_length(n::Int128)
